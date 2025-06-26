@@ -16,7 +16,7 @@ This is a smart AI-powered chatbot with Firebase authentication and Cohere integ
 
 ---
 
-#🚀 Features
+# 🚀 Features
 
 - 🔐 User Login / Signup with Firebase
 - 💬 Chat with OpenAI-powered bot
@@ -36,17 +36,17 @@ This is a smart AI-powered chatbot with Firebase authentication and Cohere integ
 - Cohere API Key
 
  Set Up Backend
-  -cd backend
-  -npm install
+  - cd backend
+  - npm install
 
 Create a .env file inside /backend:
-  -COHERE_API_KEY=your_cohere_api_key
-  -FIREBASE_PRIVATE_KEY=your_firebase_private_key
-  -FIREBASE_PROJECT_ID=your_project_id
-  -FIREBASE_CLIENT_EMAIL=your_firebase_client_email
+  - COHERE_API_KEY=your_cohere_api_key
+  - FIREBASE_PRIVATE_KEY=your_firebase_private_key
+  - FIREBASE_PROJECT_ID=your_project_id
+  - FIREBASE_CLIENT_EMAIL=your_firebase_client_email
 
 Run the server
-  -node server.js
+  - node server.js
 
  Run Frontend
 Simply open frontend/index.html in your browser or use a live server extension in VSCode.
