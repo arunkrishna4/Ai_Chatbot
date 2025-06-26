@@ -1,8 +1,8 @@
-Smart AI Chatbot
+# Smart AI Chatbot
 
 This is a smart AI-powered chatbot with Firebase authentication and Cohere integration. It supports real-time conversations with users and is built with a separate frontend and backend structure.
 
-⚙️ Technologies Used
+# ⚙️ Technologies Used
 
 - **Frontend:**
   - HTML5, CSS3
@@ -16,7 +16,7 @@ This is a smart AI-powered chatbot with Firebase authentication and Cohere integ
 
 ---
 
-🚀 Features
+#🚀 Features
 
 - 🔐 User Login / Signup with Firebase
 - 💬 Chat with OpenAI-powered bot
@@ -27,15 +27,15 @@ This is a smart AI-powered chatbot with Firebase authentication and Cohere integ
 
 ---
 
-🔧 Setup Instructions
+# 🔧 Setup Instructions
 
-# Prerequisites
+ Prerequisites
 
 - Node.js and npm installed
 - Firebase project
 - Cohere API Key
 
- # Set Up Backend
+ Set Up Backend
   -cd backend
   -npm install
 
@@ -48,5 +48,5 @@ Create a .env file inside /backend:
 Run the server
   -node server.js
 
-# Run Frontend
+ Run Frontend
 Simply open frontend/index.html in your browser or use a live server extension in VSCode.
