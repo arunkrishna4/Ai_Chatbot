@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings</title>
+
+  <!-- External Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="./settingscss.css" />
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <button class="toggle-btn" id="toggle-btn">☰</button>
+    
+    <div class="profile">
+      <i class="fas fa-user-circle"></i>
+      <p id="user-email">Loading...</p>
+    </div>
+
+    <a href="index.html" class="nav-link">
+      <i class="fas fa-home"></i> <span class="nav-text">Home</span>
+    </a>
+
+    <a href="events.html" class="nav-link">
+      <i class="fas fa-calendar-alt"></i> <span class="nav-text">Events</span>
+    </a>
+
+    <a href="settings.html" class="nav-link active">
+      <i class="fas fa-cog"></i> <span class="nav-text">Settings</span>
+    </a>
+
+    <a href="#" onclick="logout()" class="nav-link">
+      <i class="fas fa-sign-out-alt"></i> <span class="nav-text">Logout</span>
+    </a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <header>
+      <span style="margin-left: 10px;">💬 Smart AI Chatbot</span>
+    </header>
+
+    <div class="page-con">
+      <h2>Settings</h2>
+      <p>Customize your chatbot experience.</p>
+    </div>
+
+ <div class="appereance">
+  <div class="appereance-title">
+    <span style="font-size: 18px;"><b>Appearance</b></span>
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle" />
+      <span class="slider"></span>
+    </label>
+  </div>
+  <div class="linebreak"></div>
+  <div class="setting-section">
+    <h3 style="text-align: center;">Change Password</h3>
+    <div class="password-row">
+      <input type="password" id="oldPassword" placeholder="Old Password" required/>
+      <input type="password" id="newPassword" placeholder="New Password" required/>
+    </div>
+    <button class="updbtn">Update Password</button>
+  
+  </div>
+</div>
+
+
+  <!-- Scripts -->
+  <script type="module" src="./settingsjs.js"></script>
+
+</body>
+</html>
