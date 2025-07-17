@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart AI Chatbot</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+    <button class="toggle-btn" id="toggle-btn" style="padding-left: 15;">☰</button>
+    
+<div class="profile">
+  <i class="fas fa-user-circle"></i>
+  <p id="user-email">Loading...</p>
+</div>
+
+  <a href="index.html" class="nav-link">
+    <i class="fas fa-home"></i> <span class="nav-text">Home</span>
+  </a>
+
+   <a href="events.html" class="nav-link">
+    <i class="fas fa-calendar-alt"></i> <span class="nav-text">Events</span>
+    </a>
+
+  <a href="./settings.html">
+    <i class="fas fa-cog"></i> <span class="nav-text">Settings</span>
+  </a> 
+  
+  <a href="#" onclick="logout()" class="nav-link"><i class="fas fa-sign-out-alt"></i> <span class="nav-text">Logout</span></a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <header>
+      <span style="margin-left: 10px;">💬 Smart AI Chatbot</span>
+    </header>
+    
+    <div id="chat-container"></div>
+     <div id="chat-placeholder" class="chat-placeholder">
+  <h3>👋 Welcome to Smart AI Chatbot</h3>
+  <p>Ask me anything or say <strong>“schedule”</strong> to create an event.</p>
+</div>
+
+
+    <div id="input-area">
+      <input type="text" id="user-input" placeholder="Type your message..." />
+      <button id="send-btn" onclick="sendMessage()">Send</button>
+      <button id="open-event-btn" class="event-btn">➕ Add Event</button>
+
+    </div>
+  </div>
+
+  <div id="event-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3>Schedule Event</h3>
+    <form id="event-form">
+      <input type="text" id="event-name" placeholder="Event Name" required /><br><br>
+      <input type="date" id="event-date" required /><br><br>
+      <input type="time" id="event-time" required /><br><br>
+      <button type="submit" class="save-event-btn">Save Event</button>
+    </form>
+  </div>
+</div>
+
+  <script type="module" src="./script.js"></script>
+
+</body>
+</html>
