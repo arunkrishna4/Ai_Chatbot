@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="./eventscss.css"/>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+  <button class="toggle-btn" id="toggle-btn">☰</button>
+
+  <div class="profile">
+    <i class="fas fa-user-circle"></i>
+    <p id="user-email">Loading...</p>
+  </div>
+
+  <a href="index.html" class="nav-link">
+    <i class="fas fa-home"></i> <span class="nav-text">Home</span>
+  </a>
+
+  <a href="" class="nav-link active">
+    <i class="fas fa-calendar-alt"></i> <span class="nav-text">Events</span>
+    </a>
+
+  <a href="settings.html" class="nav-link ">
+    <i class="fas fa-cog"></i> <span class="nav-text">Settings</span>
+  </a>
+
+    <a href="#" onclick="logout()" class="nav-link">
+    <i class="fas fa-sign-out-alt"></i> <span class="nav-text">Logout</span>
+  </a>
+</div>
+
+
+  <!-- Main Content -->
+  <div class="main">
+    <header>
+      <span style="margin-left: 10px;">💬 Smart AI Chatbot</span>
+    </header>
+   
+<div class="calendar-events">
+  <h2>Your Events</h2>
+  <ul id="events-list"></ul>  
+  <div class="countdown-widget">
+  <p id="countdown">Loading countdown...</p>
+</div>
+</div>
+
+
+
+  <script type="module" src="./eventsjs.js"></script> 
+
+</body>
+</html>
